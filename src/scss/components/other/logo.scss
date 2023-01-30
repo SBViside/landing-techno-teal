@@ -1,0 +1,14 @@
+.logo {
+  color: $primary;
+  user-select: none;
+
+  .logo__text {
+    font-size: 50px;
+    letter-spacing: 7px;
+    line-height: 0.8;
+  }
+  .logo__subtext {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}

@@ -1,0 +1,68 @@
+@import "./fonts";
+@import "./variables";
+@import "./components/other/logo";
+@import "./components/_header";
+@import "./components/_footer";
+@import "./components/_main";
+@import "./components/other/swiper";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $containerWidth;
+  padding-left: $containerPadding;
+  padding-right: $containerPadding;
+}
+
+.hder {
+  color: $secondary;
+  font-size: 36px;
+}
+.default {
+  color: $secondary;
+  font-size: 36px;
+}
+
+// LINKS
+%link {
+  display: inline-block;
+  padding: 18px 40px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+.link--primary {
+  @extend %link;
+  background-color: $primary;
+}
+.link--secondary {
+  @extend %link;
+  background-color: $secondary;
+}
